@@ -19,15 +19,18 @@ hr {
 hr.light {
   border-color: white;
 }
+hr.dark {
+  border-color: black;
+}
 a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #6BB9F0;
+  color: black;
 }
 a:hover,
 a:focus {
-  color: #eb3812;
+  color: #6BB9F0;
 }
 h1,
 h2,
