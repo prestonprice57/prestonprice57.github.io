@@ -75,7 +75,7 @@ function update(dt) {
 
   for ( var i = 0; i < intersects.length; i++ ) {
 
-    intersects[ i ].object.material.color.set( 0xffffff*Math.random() );
+    // intersects[ i ].object.material.color.set( 0xffffff*Math.random() );
     // console.log(intersects[i].object);
     isRearranging = true;
     particleIndex = getParticleSystemIndex(intersects[i].object);
