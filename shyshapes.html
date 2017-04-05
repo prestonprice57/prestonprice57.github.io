@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shy Shapes</title>
+	<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"> -->
+
+	<script src="js/three.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/StereoEffect.js"></script>
+	<script src="js/FirstPersonControls.js"></script>
+	<script src="js/DeviceOrientationControls.js"></script>
+	<script src="js/OrbitControls.js"></script>
+	<script src="js/CanvasRenderer.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/createParticles.js"></script>
+	<style>
+		body {margin: 0;}
+	</style>
+</head>
+<body>
+	<div id="container"></div>
+	<script type="text/javascript">
+	    var camera, scene, renderer, dolly;
+	    var effect, controls, controls2;
+	    var element, container;
+	    var clock = new THREE.Clock();
+			var particleIndex = -1, particles = [], particleSystems = [], particleCount = 8000;
+			var geometry;
+			var raycaster = new THREE.Raycaster();
+			var isRearranging = false;
+			var steps = 100, current = 0;
+			var newVelocity = [];
+			var num_shapes = 4;
+			var size, shape;
+			var rayDir = 0.0, neg = -1;
+			var rotate = true;
+			var oldColors = new Array(8), newColors = new Array(8);
+			console.log(oldColors);
+			var box, pivot;
+			var startLocations = [[150, 30, 0],
+														[0, 30, 150],
+														[-150, 30, 0],
+														[0, 30, -150],
+														[106, 30, 106],
+														[-106, 30, 106],
+														[106, 30, -106],
+														[-106, 30, -106]];
+
+	    init();
+	    animate();
+	</script>
+</body>
+</html>
