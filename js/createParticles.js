@@ -39,7 +39,6 @@ function createParticles(vertices) {
 
   particleSystems.push(particleSystem);
 
-  console.log(particleSystem);
 }
 
 
